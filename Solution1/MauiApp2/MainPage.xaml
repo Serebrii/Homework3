@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="Унесите цео број:"
+               FontSize="36" FontFamily="UbuntuMono" FontAttributes="None"/>
+            <Entry x:Name="NumberEntry"
+               Keyboard="Numeric"
+               Placeholder="Цео број" FontFamily="UbuntuMono"/>
+            <Button Text="Потврди"
+                Clicked="OnConfirmButtonClicked" FontFamily="UbuntuMono"/>
+            <Label x:Name="ResultLabel"
+               FontSize="24"
+               TextColor="Black"
+               FontFamily="UbuntuMono"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
